@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset some default styles for better consistency */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the navigation bar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style for the navigation list */
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for navigation items */
+.nav-list li {
+  float: left;
+}
+
+/* Style for navigation links */
+.nav-list li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Style for dropdown */
+.dropdown {
+  /* position: relative; */
+}
+
+/* Style for dropdown content */
+.dropdown-content {
+  display: none;
+}
+
+/* Show dropdown content on hover */
+.nav-list li:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #e2a8a8;
+  min-width: 5rem;
+  z-index: 1;
+}
+.dropdown-content a:hover {
+  background: #333;
+  transition: 0.4s linear;
+}
