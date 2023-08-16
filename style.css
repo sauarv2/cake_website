@@ -29,6 +29,19 @@ ul {
   width: 100%;
   background: #e16ff5;
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+}
+.addresBar .contact {
+  font-weight: 600;
+  outline: 2px solid #fff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 /* Style for the navigation list */
 .nav-list {
@@ -55,6 +68,8 @@ ul {
 
 /* Style for dropdown */
 .dropdown {
+  /* position: relative; */
+  /* outline: 1px solid red; */
   /* position: relative; */
 }
 
@@ -86,6 +101,16 @@ ul {
   100% {
     transform: scale(1);
   }
+}
+/** SERVICE ICON***/
+.dropdown #drop {
+  line-height: 30rem;
+  color: #e16ff5;
+  /* outline: 1px solid red; */
+  position: absolute;
+  top: 52%;
+  left: 96%;
+  transform: translate(-50%, -50%);
 }
 /* Table Styles */
 
@@ -205,5 +230,75 @@ ul {
   .fl-table tbody td {
     display: block;
     text-align: center;
+  }
+}
+
+/* SVG ICON STYLE----------------*/
+/* fire icon */
+#fire-1 {
+  animation: F1 4s ease-in infinite;
+  transform-box: fill-box;
+}
+
+@keyframes F1 {
+  0% {
+    transform: translateX(-0.22rem);
+  }
+  20% {
+    transform: translateX(-1.5rem);
+  }
+  40% {
+    transform: translateX(1.2rem);
+  }
+  60% {
+    transform: translateX(-1rem);
+  }
+  80% {
+    transform: translateX(-0.8rem);
+  }
+  100% {
+    transform: translateX(-0.4rem);
+  }
+}
+
+#fire-2 {
+  animation: F2 4s ease-in 1s infinite;
+  transform-box: fill-box;
+}
+
+@keyframes F2 {
+  0% {
+    transform: translateX(-0.2rem);
+  }
+  20% {
+    transform: translateX(-0.8rem);
+  }
+  40% {
+    transform: translateX(-0.4rem);
+  }
+}
+#fire-3 {
+  animation: F3 1s ease-in infinite;
+  transform-box: fill-box;
+}
+
+@keyframes F3 {
+  0% {
+    transform: translateX(-0.4rem);
+  }
+  20% {
+    transform: translateX(-1.5rem);
+  }
+  40% {
+    transform: translateX(-1.2rem);
+  }
+  60% {
+    transform: translateX(-1rem);
+  }
+  80% {
+    transform: translateX(-0.8rem);
+  }
+  100% {
+    transform: translateX(-0.4rem);
   }
 }
