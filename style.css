@@ -1,8 +1,13 @@
-* {
+*,
+::before,
+::after {
   margin: 0;
   font-family: Arial, sans-serif;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  font-size: 90%;
 }
 
 /* Reset some default styles for better consistency */
@@ -21,6 +26,7 @@ ul {
   width: 100%;
   padding: 0 1rem;
 }
+
 .logo {
   color: #050505;
   font-size: 2rem;
@@ -42,6 +48,9 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+.addresBar .menu-bar {
+  display: none;
 }
 /* Style for the navigation list */
 .nav-list {
@@ -162,6 +171,57 @@ ul {
 
 .fl-table tr:nth-child(even) {
   background: #f8f8f8;
+}
+/*-------------------------------- NAV BAR RESPONSIVE----------------
+-----------
+*/
+@media (width < 420px) {
+  html {
+    font-size: 70%;
+  }
+  /* ADDRESS BAR**************** */
+  .addresBar .contact {
+    display: none;
+  }
+  .addresBar .menu-bar {
+    display: block;
+    font-size: 3.5rem;
+    outline: 2px solid #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+    line-height: 30px;
+    border-radius: 10px;
+  }
+  /***** NAV BAR ***************/
+  .navbar {
+    z-index: 10;
+    position: fixed;
+    top: 0%;
+    right: -500%;
+    width: 60%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--second-color);
+    transition: 0.5s;
+    background: #050505;
+    overflow: hidden;
+  }
+  .navbar .nav-list {
+    /* outline: 1px solid red; */
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .navbar .nav-list li {
+    font-size: 1.5rem;
+  }
+  .nav-list li:hover .dropdown-content {
+    display: none;
+  }
 }
 
 /* Responsive */
