@@ -179,7 +179,7 @@ ul {
   html {
     font-size: 70%;
   }
-  /* ADDRESS BAR**************** */
+  /***** ADDRESS BAR**************** */
   .addresBar .contact {
     display: none;
   }
@@ -192,7 +192,12 @@ ul {
     padding: 0.5rem;
     line-height: 30px;
     border-radius: 10px;
+    z-index: 50;
   }
+  .wcolor{
+    color: #fff;
+  }
+
   /***** NAV BAR ***************/
   .navbar {
     z-index: 10;
@@ -222,6 +227,9 @@ ul {
   .nav-list li:hover .dropdown-content {
     display: none;
   }
+  .navbar.slide {
+   
+    right: 0%;
 }
 
 /* Responsive */
