@@ -76,19 +76,11 @@ ul {
 }
 
 /* Style for dropdown */
-.dropdown {
-  /* position: relative; */
-  /* outline: 1px solid red; */
-  /* position: relative; */
-}
 
 /* Style for dropdown content */
 .dropdown-content {
   display: none;
 }
-/* .dropdown-content:hover {
-  
-} */
 
 /* Show dropdown content on hover */
 .nav-list li:hover .dropdown-content {
@@ -194,7 +186,7 @@ ul {
     border-radius: 10px;
     z-index: 50;
   }
-  .wcolor{
+  .wcolor {
     color: #fff;
   }
 
@@ -228,145 +220,183 @@ ul {
     display: none;
   }
   .navbar.slide {
-   
     right: 0%;
+  }
+
+  /* Responsive */
+
+  @media (max-width: 767px) {
+    .fl-table {
+      display: block;
+      width: 100%;
+    }
+    .table-wrapper:before {
+      content: "Scroll horizontally >";
+      display: block;
+      text-align: right;
+      font-size: 11px;
+      color: white;
+      padding: 0 0 10px;
+    }
+    .fl-table thead,
+    .fl-table tbody,
+    .fl-table thead th {
+      display: block;
+    }
+    .fl-table thead th:last-child {
+      border-bottom: none;
+    }
+    .fl-table thead {
+      float: left;
+    }
+    .fl-table tbody {
+      width: auto;
+      position: relative;
+      overflow-x: auto;
+    }
+    .fl-table td,
+    .fl-table th {
+      padding: 20px 0.625em 0.625em 0.625em;
+      height: 60px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 120px;
+      font-size: 13px;
+      text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+      text-align: left;
+      border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+      display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+      background: none;
+    }
+    .fl-table tr:nth-child(even) {
+      background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+      background: #f8f8f8;
+      border-right: 1px solid #e6e4e4;
+    }
+    .fl-table tr td:nth-child(even) {
+      border-right: 1px solid #e6e4e4;
+    }
+    .fl-table tbody td {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  /* SVG ICON STYLE----------------*/
+  /* fire icon */
+  #fire-1 {
+    animation: F1 4s ease-in infinite;
+    transform-box: fill-box;
+  }
+
+  @keyframes F1 {
+    0% {
+      transform: translateX(-0.22rem);
+    }
+    20% {
+      transform: translateX(-1.5rem);
+    }
+    40% {
+      transform: translateX(1.2rem);
+    }
+    60% {
+      transform: translateX(-1rem);
+    }
+    80% {
+      transform: translateX(-0.8rem);
+    }
+    100% {
+      transform: translateX(-0.4rem);
+    }
+  }
+
+  #fire-2 {
+    animation: F2 4s ease-in 1s infinite;
+    transform-box: fill-box;
+  }
+
+  @keyframes F2 {
+    0% {
+      transform: translateX(-0.2rem);
+    }
+    20% {
+      transform: translateX(-0.8rem);
+    }
+    40% {
+      transform: translateX(-0.4rem);
+    }
+  }
+  #fire-3 {
+    animation: F3 1s ease-in infinite;
+    transform-box: fill-box;
+  }
+
+  @keyframes F3 {
+    0% {
+      transform: translateX(-0.4rem);
+    }
+    20% {
+      transform: translateX(-1.5rem);
+    }
+    40% {
+      transform: translateX(-1.2rem);
+    }
+    60% {
+      transform: translateX(-1rem);
+    }
+    80% {
+      transform: translateX(-0.8rem);
+    }
+    100% {
+      transform: translateX(-0.4rem);
+    }
+  }
 }
 
-/* Responsive */
+/**********
+LANDING PAGE SLIDE--------------------------
+*/
 
-@media (max-width: 767px) {
-  .fl-table {
-    display: block;
-    width: 100%;
-  }
-  .table-wrapper:before {
-    content: "Scroll horizontally >";
-    display: block;
-    text-align: right;
-    font-size: 11px;
-    color: white;
-    padding: 0 0 10px;
-  }
-  .fl-table thead,
-  .fl-table tbody,
-  .fl-table thead th {
-    display: block;
-  }
-  .fl-table thead th:last-child {
-    border-bottom: none;
-  }
-  .fl-table thead {
-    float: left;
-  }
-  .fl-table tbody {
-    width: auto;
-    position: relative;
-    overflow-x: auto;
-  }
-  .fl-table td,
-  .fl-table th {
-    padding: 20px 0.625em 0.625em 0.625em;
-    height: 60px;
-    vertical-align: middle;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 120px;
-    font-size: 13px;
-    text-overflow: ellipsis;
-  }
-  .fl-table thead th {
-    text-align: left;
-    border-bottom: 1px solid #f7f7f9;
-  }
-  .fl-table tbody tr {
-    display: table-cell;
-  }
-  .fl-table tbody tr:nth-child(odd) {
-    background: none;
-  }
-  .fl-table tr:nth-child(even) {
-    background: transparent;
-  }
-  .fl-table tr td:nth-child(odd) {
-    background: #f8f8f8;
-    border-right: 1px solid #e6e4e4;
-  }
-  .fl-table tr td:nth-child(even) {
-    border-right: 1px solid #e6e4e4;
-  }
-  .fl-table tbody td {
-    display: block;
-    text-align: center;
-  }
+.Slideproject {
+  /* border: 1px solid red; */
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-/* SVG ICON STYLE----------------*/
-/* fire icon */
-#fire-1 {
-  animation: F1 4s ease-in infinite;
-  transform-box: fill-box;
+.Slideproject .SlideprojectContainer {
+  position: absolute;
+  border: 2px solid var(--brown-color);
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
 }
 
-@keyframes F1 {
-  0% {
-    transform: translateX(-0.22rem);
-  }
-  20% {
-    transform: translateX(-1.5rem);
-  }
-  40% {
-    transform: translateX(1.2rem);
-  }
-  60% {
-    transform: translateX(-1rem);
-  }
-  80% {
-    transform: translateX(-0.8rem);
-  }
-  100% {
-    transform: translateX(-0.4rem);
-  }
+.Slideproject .SlideprojectContainer .projects {
+  opacity: 0;
+  object-position: center;
+  object-fit: cover;
+}
+.Slideproject .SlideprojectContainer .projects img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-#fire-2 {
-  animation: F2 4s ease-in 1s infinite;
-  transform-box: fill-box;
-}
-
-@keyframes F2 {
-  0% {
-    transform: translateX(-0.2rem);
-  }
-  20% {
-    transform: translateX(-0.8rem);
-  }
-  40% {
-    transform: translateX(-0.4rem);
-  }
-}
-#fire-3 {
-  animation: F3 1s ease-in infinite;
-  transform-box: fill-box;
-}
-
-@keyframes F3 {
-  0% {
-    transform: translateX(-0.4rem);
-  }
-  20% {
-    transform: translateX(-1.5rem);
-  }
-  40% {
-    transform: translateX(-1.2rem);
-  }
-  60% {
-    transform: translateX(-1rem);
-  }
-  80% {
-    transform: translateX(-0.8rem);
-  }
-  100% {
-    transform: translateX(-0.4rem);
-  }
+.Slideproject .SlideprojectContainer .projects.active {
+  opacity: 1;
 }
