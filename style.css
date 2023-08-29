@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
 *,
 ::before,
 ::after {
@@ -6,9 +8,14 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.4s linear;
+  font-family: "Comfortaa", cursive;
 }
 html {
   font-size: 90%;
+}
+
+body {
+  /* font-family: "Noto Sans", sans-serif; */
 }
 :root {
   --navbar-color: #f7f0e8;
@@ -424,7 +431,9 @@ LANDING PAGE SLIDE--------------------------
   object-position: center;
   /* border-bottom-left-radius: 5px; */
   /* border-bottom-right-radius: 400px; */
-  transition: transform 2s liner;
+}
+.projects img {
+  transform: scale(2);
 }
 
 .Slideproject .SlideprojectContainer .projects.active {
@@ -434,9 +443,27 @@ LANDING PAGE SLIDE--------------------------
 }
 
 .scale img {
-  /* transition: transform 2s liner; */
-  transform: scale(1.2);
+  transform: scale(1);
+  transition-delay: 0.8s;
 }
+/* MOBILE SLIDE IMAGE */
+.Slideproject .SlideprojectContainer .projects .mSlide img {
+  display: none;
+}
+
+.Slideproject .SlideprojectContainer .projects .details1 {
+  position: absolute;
+  border: 10px solid red;
+}
+.Slideproject .SlideprojectContainer .projects .details2 {
+  position: absolute;
+  border: 10px solid red;
+}
+.Slideproject .SlideprojectContainer .projects .details3 {
+  position: absolute;
+  border: 10px solid red;
+}
+
 /************* slide responsive ******************/
 @media (width < 420px) {
   .Slideproject .SlideprojectContainer .projects img {
