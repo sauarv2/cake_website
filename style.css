@@ -47,6 +47,7 @@ ul {
 .logo {
   color: #050505;
   font-size: 2rem;
+  /* border: 1px solid red; */
 }
 .addresBar {
   width: 100%;
@@ -200,6 +201,17 @@ ul li a:hover {
   /***** ADDRESS BAR**************** */
   .addresBar .contact {
     display: none;
+  }
+  .logo {
+    color: #050505;
+    font-size: 2rem;
+    /* border: 1px solid red; */
+    width: 40%;
+  }
+  .addresBar {
+    /* outline: 1px solid red; */
+    justify-content: space-around;
+    padding: 0;
   }
   .addresBar .menu-bar {
     display: block;
@@ -447,7 +459,13 @@ LANDING PAGE SLIDE--------------------------
   transition-delay: 0.8s;
 }
 /* MOBILE SLIDE IMAGE */
-.Slideproject .SlideprojectContainer .projects .mSlide img {
+.Slideproject .SlideprojectContainer .projects .dis {
+  display: none;
+}
+.Slideproject .SlideprojectContainer .projects .mSlide2 {
+  display: none;
+}
+.Slideproject .SlideprojectContainer .projects .mSlide3 {
   display: none;
 }
 /* SIDE PROJECT DETAILS ALIGNMENT */
@@ -455,7 +473,7 @@ LANDING PAGE SLIDE--------------------------
   position: absolute;
   /* border: 1px solid red; */
   color: var(--white-color);
-  min-width: 22%;
+  /* min-width: 22%; */
   min-width: fit-content;
   height: fit-content;
   display: flex;
@@ -554,6 +572,51 @@ LANDING PAGE SLIDE--------------------------
 }
 
 /************* slide responsive ******************/
+
+@media (width < 770px) {
+  html {
+    font-size: 80%;
+  }
+  /***** in responsive change alignment font size and line height ************/
+
+  .Slideproject .SlideprojectContainer .projects .details {
+    left: 8rem;
+    top: 5rem;
+    line-height: 5rem;
+    padding: 2rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details1 h1 {
+    font-size: 5rem;
+    padding-bottom: 0;
+  }
+  .Slideproject .SlideprojectContainer .projects .details1 h1 span {
+    font-size: 5rem;
+    padding: 2rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details1 p {
+    font-size: 1.5rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details2 {
+    line-height: 20px;
+    left: 15rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details2 h1 {
+    font-size: 3.5rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details2 h1 span {
+    font-size: 3rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details3 {
+    line-height: 20px;
+  }
+  .Slideproject .SlideprojectContainer .projects .details3 h1 {
+    font-size: 3rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details3 h1 span {
+    font-size: 2.5rem;
+  }
+}
+
 @media (width < 420px) {
   .Slideproject .SlideprojectContainer .projects img {
     /* border-bottom-right-radius: 200px; */
@@ -561,7 +624,83 @@ LANDING PAGE SLIDE--------------------------
   .Slideproject .layer {
     /* border-bottom-right-radius: 200px; */
   }
+  .Slideproject .SlideprojectContainer {
+    height: 50vh;
+  }
+  /* ************** slide image responsive *** change the image in mobile-mode */
+  .i1 {
+    display: none;
+  }
+  .i2 {
+    display: none;
+  }
+  .i3 {
+    display: none;
+  }
+  .Slideproject .SlideprojectContainer .projects .dis {
+    display: block;
+  }
+  /***** in responsive change alignment font size and line height ************/
+
+  .Slideproject .SlideprojectContainer .projects .details {
+    /* outline: 1px solid #ff0000; */
+    transform: translateX(-25%) translateY(50%);
+    min-width: 90%;
+    height: 20%;
+    line-height: 25px;
+    margin: auto;
+    padding: 0;
+  }
+  .Slideproject .SlideprojectContainer .projects .details1 {
+    line-height: 20px;
+  }
+  .Slideproject .SlideprojectContainer .projects .details1 h1 {
+    /* outline: 1px solid #58be13; */
+    width: 100%;
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+    color: var(--black-color);
+    /* text-shadow: 11px 7px 12px var(--primary-color); */
+  }
+  .Slideproject .SlideprojectContainer .projects .details1 h1 span {
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details1 p {
+    /* outline: 1px solid #58be13; */
+    text-align: left;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    padding-left: 4.5rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details2 {
+    line-height: 20px;
+    left: 9.5rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details2 h1 {
+    font-size: 2.5rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details2 h1 span {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .Slideproject .SlideprojectContainer .projects .details3 {
+    /* outline: 1px solid #58be13; */
+    line-height: 20px;
+    width: 100%;
+  }
+  .Slideproject .SlideprojectContainer .projects .details3 h1 {
+    font-size: 1.9rem;
+
+    /* text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); */
+  }
+  .Slideproject .SlideprojectContainer .projects .details3 h1 span {
+    font-size: 1.7rem;
+    padding-bottom: 1.7rem;
+    /* text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); */
+  }
 }
+
 /********************* icons *********************** */
 
 .leftI {

@@ -7,6 +7,7 @@ const slides = document.querySelectorAll(".projects");
 const prevBtn = document.querySelector(".leftI");
 const nextBtn = document.querySelector(".rightI");
 const i1EL = document.querySelector(".i1");
+const imSlide1EL = document.querySelector(".mSlide1");
 const detailsEL = document.querySelector(".details");
 
 let slideIndex = 0; // take a index number
@@ -16,6 +17,9 @@ let slideIndex = 0; // take a index number
 window.addEventListener("load", () => {
   setTimeout(() => {
     i1EL.style.transform = "scale(1)"; //SLIDE IMAGE SCALE WILL BE 1 after 1 secound
+    imSlide1EL.style.transform = "scale(1)"; //resposive img
+
+    // imSlide1EL.style.transform = "scale(1)"; //SLIDE IMAGE SCALE WILL BE 1 after 1 secound
   }, 1000);
 });
 // Responsive*********
