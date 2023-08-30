@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Great+Vibes&display=swap");
 
 *,
 ::before,
@@ -320,7 +320,7 @@ ul li a:hover {
 /* SVG ICON STYLE----------------*/
 /* fire icon */
 #fire-1 {
-  animation: F1 4s ease-in infinite;
+  animation: F1 4s ease-in infinite alternate;
   transform-box: fill-box;
 }
 
@@ -346,7 +346,7 @@ ul li a:hover {
 }
 
 #fire-2 {
-  animation: F2 4s ease-in 1s infinite;
+  animation: F2 4s ease-in 1s infinite alternate;
   transform-box: fill-box;
 }
 
@@ -362,7 +362,7 @@ ul li a:hover {
   }
 }
 #fire-3 {
-  animation: F3 1s ease-in infinite;
+  animation: F3 1s ease-in infinite alternate;
   transform-box: fill-box;
 }
 
@@ -450,18 +450,107 @@ LANDING PAGE SLIDE--------------------------
 .Slideproject .SlideprojectContainer .projects .mSlide img {
   display: none;
 }
-
-.Slideproject .SlideprojectContainer .projects .details1 {
+/* SIDE PROJECT DETAILS ALIGNMENT */
+.Slideproject .SlideprojectContainer .projects .details {
   position: absolute;
-  border: 10px solid red;
+  /* border: 1px solid red; */
+  color: var(--white-color);
+  min-width: 22%;
+  min-width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+  left: 15rem;
+  top: 10rem;
+  line-height: 5rem;
 }
+.projects .details.activeTex {
+  transform: translateX(0%);
+}
+.projects .details.removeTex {
+  transform: translateX(-400%);
+}
+/*  .details1 H1 SPAN ELEMENT STYLING */
+.Slideproject .SlideprojectContainer .projects .details1 h1 span {
+  display: block;
+  text-align: left;
+  font-family: "Great Vibes", cursive;
+  font-size: 8rem;
+  line-height: 30px;
+  padding-bottom: 5rem;
+  text-shadow: 11px 7px 12px var(--primary-color);
+}
+/* .details1 H1 ELEMENT STYLING */
+.Slideproject .SlideprojectContainer .projects .details1 h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 8rem;
+  text-shadow: 11px 7px 12px var(--primary-color);
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+/* .details1 P ELEMENT STYLING  */
+.Slideproject .SlideprojectContainer .projects .details1 p {
+  font-size: 1.9rem;
+  color: var(--white-color);
+  font-weight: 450;
+  text-shadow: 1px 0px 4px rgb(0, 0, 0, 1);
+  padding: 0;
+}
+/* .details1 P SPAN ELEMENT STYLING  */
+.Slideproject .SlideprojectContainer .projects .details1 p span {
+  color: var(--black-color);
+  background: var(--navbar-color);
+  text-shadow: none;
+  padding: 1px;
+}
+/* .details2  ELEMENT ALIGNMENT   */
 .Slideproject .SlideprojectContainer .projects .details2 {
-  position: absolute;
-  border: 10px solid red;
+  left: 30rem;
 }
+/* .details2 H1 ELEMENT STYLING */
+.Slideproject .SlideprojectContainer .projects .details2 h1 {
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 6rem;
+  text-shadow: 1px 0px 4px rgba(218, 36, 151, 1);
+  font-weight: 500;
+}
+
+/*  .details2 H1 SPAN ELEMENT STYLING */
+
+.Slideproject .SlideprojectContainer .projects .details2 h1 span {
+  display: block;
+  text-align: left;
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 4rem;
+  line-height: 30px;
+  text-shadow: 1px 0px 4px rgba(218, 36, 151, 1);
+  padding-bottom: 3rem;
+}
+
 .Slideproject .SlideprojectContainer .projects .details3 {
-  position: absolute;
-  border: 10px solid red;
+  top: 15rem;
+}
+/* .details3 H1 ELEMENT STYLING */
+
+.Slideproject .SlideprojectContainer .projects .details3 h1 {
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 5rem;
+  text-shadow: 1px 0px 4px rgba(218, 36, 151, 1);
+  font-weight: 500;
+}
+/* .details3 H1 SPAN ELEMENT STYLING */
+.Slideproject .SlideprojectContainer .projects .details3 h1 span {
+  display: block;
+  text-align: left;
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 3rem;
+  line-height: 30px;
+  text-shadow: 1px 0px 4px rgba(218, 36, 151, 1);
+  padding-bottom: 3rem;
 }
 
 /************* slide responsive ******************/
