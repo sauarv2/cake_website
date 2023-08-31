@@ -407,10 +407,12 @@ LANDING PAGE SLIDE--------------------------
   z-index: 20;
   position: relative;
 } */
+.landingSlide {
+}
 .Slideproject {
   /* border: 1px solid red; */
   position: relative;
-  height: 80vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -421,7 +423,7 @@ LANDING PAGE SLIDE--------------------------
   position: absolute;
   /* border: 2px solid red; */
   width: 100%;
-  height: 81.5vh;
+  height: 65vh;
   overflow: hidden;
   background: var(--bg-color);
 }
@@ -746,11 +748,24 @@ LANDING PAGE SLIDE--------------------------
   }
 }
 
-/*
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-top-left-radius: 150px;
-    border-bottom-right-radius: 150px;
-    */
+/******************** shop catagory ***************** */
+
+.cakeCatgory .boxContainer {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  padding: 1rem 2rem;
+  align-content: center;
+  justify-items: center;
+}
+.cakeCatgory .boxContainer .boxs p {
+  text-align: center;
+  color: var(--black);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+.cakeCatgory .boxContainer .boxs:hover p {
+  color: var(--green);
+}
