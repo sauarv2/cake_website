@@ -10,6 +10,10 @@ const i1EL = document.querySelector(".i1");
 const imSlide1EL = document.querySelector(".mSlide1");
 const detailsEL = document.querySelector(".details");
 
+//cake catagori -------------
+
+const CatgoryEL = document.querySelector(".cakeCatgory ");
+
 let slideIndex = 0; // take a index number
 
 // WHEN WEBSITE IS APPER AT FRIST**********
@@ -71,3 +75,9 @@ setInterval(() => {
   // CALL THIS FUNTION BY TIME USE SEINTERVAL
   nextSlide();
 }, 6000);
+
+// cake catagori *****************
+
+CatgoryEL.addEventListener("whell", (e) => {
+  e.preventDefault();
+});

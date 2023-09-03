@@ -9,6 +9,7 @@
   box-sizing: border-box;
   transition: all 0.4s linear;
   font-family: "Comfortaa", cursive;
+  text-decoration: none;
 }
 html {
   font-size: 90%;
@@ -579,6 +580,14 @@ LANDING PAGE SLIDE--------------------------
   html {
     font-size: 80%;
   }
+  .Slideproject {
+    /* border: 1px solid red; */
+    position: relative;
+    height: 50vh;
+  }
+  .Slideproject .SlideprojectContainer {
+    height: 50vh;
+  }
   /***** in responsive change alignment font size and line height ************/
 
   .Slideproject .SlideprojectContainer .projects .details {
@@ -627,6 +636,9 @@ LANDING PAGE SLIDE--------------------------
     /* border-bottom-right-radius: 200px; */
   }
   .Slideproject .SlideprojectContainer {
+    height: 50vh;
+  }
+  .Slideproject {
     height: 50vh;
   }
   /* ************** slide image responsive *** change the image in mobile-mode */
@@ -750,22 +762,125 @@ LANDING PAGE SLIDE--------------------------
 
 /******************** shop catagory ***************** */
 
+.cakeCatgory {
+  /* border: 1px solid green; */
+  background: var(--bg-color);
+  padding: 5rem 10rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+/* ************** edit svg icom */
+.cakeCatgory .bicon {
+  z-index: -1;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  opacity: 0.1;
+}
 .cakeCatgory .boxContainer {
   /* border: 1px solid red; */
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  padding: 1rem 2rem;
+  padding: 1rem;
   align-content: center;
   justify-items: center;
+  gap: 3rem 1rem;
+}
+.cakeCatgory .boxContainer .boxs {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 90%;
+  /* background: var(--white-color); */
+  perspective: 100px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.cakeCatgory .boxContainer .boxs img {
+  width: 90%;
 }
 .cakeCatgory .boxContainer .boxs p {
   text-align: center;
-  color: var(--black);
+  color: var(--black-color);
   font-size: 1.5rem;
   margin: 1rem 0;
   font-weight: 600;
 }
 .cakeCatgory .boxContainer .boxs:hover p {
-  color: var(--green);
+  color: var(--primary-color);
 }
+
+/************ shop catagory responsive ***********/
+
+@media (width < 770px) {
+  .cakeCatgory .boxContainer .boxs {
+    width: 100%;
+  }
+  .cakeCatgory .boxContainer .boxs img {
+    width: 100%;
+  }
+
+  .cakeCatgory .boxContainer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 3rem 2rem;
+  }
+  .cakeCatgory {
+    /* border: 1px solid green; */
+    background: var(--bg-color);
+    padding: 5rem 2rem;
+  }
+}
+
+@media (width <= 420px) {
+  .cakeCatgory .boxContainer .boxs {
+    width: 20rem;
+    margin: 0 1rem;
+  }
+  .cakeCatgory .boxContainer .boxs {
+    width: 100%;
+  }
+
+  .cakeCatgory .boxContainer .boxs img {
+    width: 100%;
+  }
+
+  .cakeCatgory .boxContainer {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    grid-gap: 20px;
+    flex: none;
+    /* animation: scroll 5s linear infinite; */
+  }
+  /* @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-250px * 6));
+    }
+  } */
+  .cakeCatgory {
+    /* border: 1px solid green; */
+    background: var(--bg-color);
+    padding: 3rem 0;
+    /* overflow-x: scroll; */
+    /* use scroll effect */
+  }
+  .cakeCatgory .bicon {
+    z-index: -1;
+    width: 300px;
+    height: 300px;
+    top: 30%;
+  }
+}
+/*
+.cakeCatgory::-webkit-scrollbar {
+     to hide the scroll 
+    display: none;
+  }
+  */
