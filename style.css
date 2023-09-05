@@ -884,3 +884,51 @@ LANDING PAGE SLIDE--------------------------
     display: none;
   }
   */
+/* ****************** OCCASIONS CONTAINER ************ */
+
+.occasions {
+  border: 1px solid #000080;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.occasions h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding-left: 0.6rem;
+}
+.occasions h2 span {
+  border-bottom: 3px solid var(--secoundary-color);
+}
+
+/* svg balloon logo */
+
+.occasions .ballon {
+  /* outline: 1px solid red; */
+  position: absolute;
+  top: 5%;
+  left: 31%;
+}
+
+/* occasions responsive */
+
+@media (width <= 768px) {
+  .occasions .ballon {
+    left: 54%;
+  }
+}
+
+@media (width <= 420px) {
+  .occasions .ballon {
+    left: 45%;
+    top: 0;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .occasions h2 {
+    font-size: 1.7rem;
+    padding: 0;
+    margin-top: 3rem;
+  }
+}

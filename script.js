@@ -77,7 +77,3 @@ setInterval(() => {
 }, 6000);
 
 // cake catagori *****************
-
-CatgoryEL.addEventListener("whell", (e) => {
-  e.preventDefault();
-});
