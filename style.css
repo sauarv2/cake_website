@@ -887,9 +887,10 @@ LANDING PAGE SLIDE--------------------------
 /* ****************** OCCASIONS CONTAINER ************ */
 
 .occasions {
-  border: 1px solid #000080;
+  /* border: 1px solid #000080; */
   padding: 2rem 0;
   position: relative;
+  /* padding-left: 2rem; */
 }
 
 .occasions h2 {
@@ -909,7 +910,61 @@ LANDING PAGE SLIDE--------------------------
   top: 5%;
   left: 31%;
 }
+.occasions .container {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  cursor: pointer;
+  margin-top: 2rem;
+  /* use scroll effect */
+}
 
+.container .boxes {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+
+  padding: 1rem;
+  align-content: center;
+  justify-items: center;
+  gap: 3rem 1rem;
+}
+.container .boxes .box {
+  width: 25rem;
+  height: 25rem;
+}
+.container .boxes .box .ibox {
+  /* border: 1px solid red; */
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container .boxes .box .ibox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.container .boxes .box .ibox p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 2rem;
+  font-weight: 450;
+  color: var(--black-color);
+  padding-right: 0.5rem;
+  background: var(--navbar-color);
+  border-bottom-right-radius: 10px;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.container.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
 /* occasions responsive */
 
 @media (width <= 768px) {
@@ -932,3 +987,5 @@ LANDING PAGE SLIDE--------------------------
     margin-top: 3rem;
   }
 }
+
+/*********** popular cakes ************************/

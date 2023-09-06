@@ -76,4 +76,32 @@ setInterval(() => {
   nextSlide();
 }, 6000);
 
-// cake catagori *****************
+// ---------------cake occation image dragable *****************
+
+const Boxel = document.querySelector(".container"); //dom sellection
+let dragable = false, // take a global vearyable dom
+  x, //x accces
+  y; //Y access
+
+const dragstart = (e) => {
+  dragable = true; //when i mouse down dragable true so it can drag
+  x = e.pageX; //  It stores the initial horizontal mouse position in x.
+  y = Boxel.scrollLeft; //It also stores the initial horizontal scroll position of the Boxel element in y.
+};
+const dragging = (e) => {
+  if (!dragable) return; // It checks if dragable is true, and if not, it returns early, preventing any further action.
+
+  e.preventDefault(); //It prevents the default behavior of mousemove,
+  let positionDiff = e.pageX - x; //It calculates the horizontal difference between the current mouse position and the initial mouse position
+
+  Boxel.scrollLeft = y - positionDiff; // It updates the horizontal scroll position of the Boxel element based on the initial scroll position y minus the positionDiff. This causes the element to scroll horizontally as the user drags the mouse.
+};
+const dragstop = (e) => {
+  dragable = false;
+};
+
+Boxel.addEventListener("mousedown", dragstart);
+Boxel.addEventListener("mouseup", dragstop);
+Boxel.addEventListener("mousemove", dragging);
+
+//These event listeners attach the previously defined event handlers to the mousedown, mouseup, and mousemove events on the Boxel element. When the user interacts with this element, the corresponding event handlers are executed.
