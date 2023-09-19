@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Great+Vibes&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s linear;
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+}
+:root {
+  --navbar-color: #fff7f7;
+  --primary-color: #fd0000;
+  --secoundary-color: #eb1212;
+  --white-color: #fff;
+  --black-color: #000;
+  --samiblack-color: #464646;
+  --bg-color: #f7f0e8;
+  --bg-color2: #fce4e4;
+  --bg-color3: #fafaf9;
+}
+body {
+  height: 100vh;
+}
+.aboutme {
+  height: 60vh;
+  background: var(--primary-color);
+  margin: 2rem 2rem 0 2rem;
+  position: relative;
+}
+.aboutme h1 {
+  border: 1px solid #0fa50fe6;
+  position: absolute;
+  left: 0;
+  bottom: -44px;
+  font-size: 5rem;
+  width: 50%;
+  line-height: 90px;
+  padding-left: 5rem;
+}
+.aboutme img {
+  width: 100%;
+}
+.aboutme .myinfo {
+  border: 1px solid #0fa50fe6;
+  position: absolute;
+  bottom: -25rem;
+  width: 40%;
+  left: 5%;
+}
+.aboutme .myinfo h3 {
+  padding: 1.4rem 0 0 1rem;
+  font-size: 2rem;
+}
+
+.aboutme .myinfo p {
+  line-height: 30px;
+  padding: 0 1rem;
+}

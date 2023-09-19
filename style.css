@@ -14,14 +14,17 @@
 html {
   font-size: 90%;
 }
+img {
+  width: 100%;
+}
 
 body {
   /* font-family: "Noto Sans", sans-serif; */
 }
 :root {
-  --navbar-color: #f7f0e8;
-  --primary-color: #da627d;
-  --secoundary-color: #89023e;
+  --navbar-color: #fff7f7;
+  --primary-color: #fd0000;
+  --secoundary-color: #eb1212;
   --white-color: #fff;
   --black-color: #000;
   --samiblack-color: #464646;
@@ -36,7 +39,14 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+.whatsappIcon a {
+  font-size: 5rem;
+  position: fixed;
+  top: 40rem;
+  right: 5px;
+  z-index: 100;
+  color: #25d366;
+}
 /* Style for the navigation bar */
 .navbar {
   background-color: var(--primary-color);
@@ -147,7 +157,9 @@ ul li a:hover {
 
 .table-wrapper {
   margin: 0 10px 10px;
+  outline: 2px solid var(--black-color);
   box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+  overflow-x: scroll;
 }
 
 .fl-table {
@@ -159,7 +171,7 @@ ul li a:hover {
   width: 100%;
   max-width: 100%;
   white-space: nowrap;
-  background-color: white;
+  background-color: var(--bg-color);
 }
 
 .fl-table td,
@@ -172,34 +184,38 @@ ul li a:hover {
 .fl-table td {
   border-right: 1px solid #f8f8f8;
   font-size: 14px;
-  /* color: aqua; */
+  color: var(--black-color);
 }
 .fl-table tr td:hover {
-  color: palevioletred;
+  background-color: #fd0000;
   transition: 0.4s linear;
   cursor: pointer;
+  color: var(--white-color);
 }
 
 .fl-table thead th {
   color: #ffffff;
-  background: #4fc3a1;
+  background: #ff0404;
   font-size: 1.2rem;
 }
 
-/* .fl-table thead th:nth-child(odd) {
-  color: #ffffff;
-  background: #324960;
+/* .fl-table tr:nth-child(odd):hover {
 } */
 
 .fl-table tr:nth-child(even) {
-  background: #f8f8f8;
+  background: #f8e3e3;
 }
+
 /*-------------------------------- NAV BAR RESPONSIVE----------------
 -----------
 */
 @media (width < 420px) {
   html {
     font-size: 70%;
+  }
+  .whatsappIcon a {
+    font-size: 4rem;
+    right: 5px;
   }
   /***** ADDRESS BAR**************** */
   .addresBar .contact {
@@ -265,13 +281,13 @@ ul li a:hover {
 }
 /* Responsive TABLE */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .fl-table {
     display: block;
     width: 100%;
   }
   .table-wrapper:before {
-    content: "Scroll horizontally >";
+    /* content: "Scroll horizontally >"; */
     display: block;
     text-align: right;
     font-size: 11px;
@@ -962,9 +978,10 @@ LANDING PAGE SLIDE--------------------------
   bottom: 0;
   font-size: 2rem;
   font-weight: 450;
-  color: var(--black-color);
+  color: var(--white-color);
   padding-right: 0.5rem;
-  background: var(--navbar-color);
+  /* background: var(--navbar-color); */
+  background: var(--primary-color);
   border-bottom-right-radius: 10px;
 }
 .container::-webkit-scrollbar {
@@ -1012,7 +1029,7 @@ LANDING PAGE SLIDE--------------------------
   /* border: 1px solid red; */
   padding: 2rem 1rem 1rem 1rem;
   margin-top: 2rem;
-  background-color: var(--secoundary-color);
+  background-color: var(--primary-color);
 }
 .cakecontainer .cakes {
   display: grid;
@@ -1193,4 +1210,191 @@ LANDING PAGE SLIDE--------------------------
     width: 13rem;
     height: 13rem;
   }
+}
+
+/* ****************** review section ******************** */
+.reviewS {
+  padding: 3rem;
+  position: relative;
+  z-index: 2;
+}
+.reviewS h2 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+.reviewS h2 span {
+  color: var(--primary-color);
+}
+.reviewS .container {
+  /* border: 1px solid #00ff6a; */
+  display: grid;
+  min-height: 40vh;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: 25px, 25px, 25px; */
+  gap: 5rem;
+  align-content: center;
+  justify-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.reviewS .container .reviw {
+  min-width: 30%;
+  height: 8rem;
+  outline: 2px solid var(--primary-color);
+  padding: 0.5rem;
+  border-bottom-right-radius: 10px;
+}
+
+.reviw .personN h3 {
+  font-size: 1.5rem;
+  /* outline: 1.5px solid #fc0000; */
+  width: fit-content;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.reviw .personR p {
+  text-justify: inter-ideograph;
+}
+.reviewS .star {
+  transform: translateX(13rem);
+}
+.reviewS .picecake {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  transform: rotate(0.05turn);
+
+  z-index: 1;
+}
+
+/* *************** responsive*** */
+@media (width <= 768px) {
+  .reviewS {
+    padding: 1rem;
+  }
+  .reviewS .container {
+    height: fit-content;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 1fr; */
+    padding: 1rem;
+    gap: 5rem 5rem;
+    overflow-x: scroll;
+  }
+  .reviewS .container .reviw {
+    width: 30rem;
+  }
+  .reviewS h2 {
+    margin-bottom: 0;
+  }
+  .reviewS .picecake {
+    width: 150px;
+    height: 150px;
+    top: 2%;
+  }
+}
+
+@media (width <= 420px) {
+  .reviewS .container .reviw {
+    padding: 0.2rem;
+    width: 25rem;
+  }
+  .reviw .personN h3 {
+    padding: 0;
+  }
+  .reviewS h2 {
+    margin-bottom: 0;
+  }
+  .reviewS .picecake {
+    display: none;
+  }
+  .reviewS .container {
+    gap: 1rem;
+  }
+}
+/* **********footer ******* */
+footer {
+  position: relative;
+  max-height: 10vh;
+}
+
+footer .footerDetails {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  color: var(--white-color);
+}
+
+footer .footerDetails h2 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+/* social media */
+footer .footerDetails .socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+a {
+  color: var(--black-color);
+}
+
+/******************** responsive ************************/
+
+@media (width <= 768px) {
+  footer .footerDetails h2 {
+    font-size: 2.1rem;
+  }
+  footer .footerDetails {
+    position: absolute;
+    top: 40px;
+    left: 0%;
+  }
+  footer {
+    max-height: 5vh;
+  }
+
+  footer .footerDetails .socialMedia {
+    margin-bottom: 1rem;
+  }
+}
+@media (width <= 420px) {
+  footer {
+    max-height: 10vh;
+  }
+  footer .footerDetails {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  footer .footerDetails h2 {
+    font-size: 1rem;
+    padding-bottom: 5px;
+  }
+  footer .footerDetails .socialMedia {
+    width: 4rem;
+    font-size: 12px;
+    margin-bottom: 1px;
+  }
+  footer .footerDetails a {
+    font-size: 5px;
+  }
+}
+
+/* scroll bar******************* */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border: 0.5rem solid transparent;
 }
