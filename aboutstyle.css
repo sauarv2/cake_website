@@ -39,7 +39,7 @@ body {
 .aboutme {
   height: 60vh;
   background: var(--primary-color);
-  margin: 0.5rem 0.5rem 0 0.5rem;
+  margin: 3rem 3rem 0 3rem;
   position: relative;
 }
 .aboutme h1 {
@@ -137,6 +137,10 @@ body {
 }
 
 @media (width <= 420px) {
+  .aboutme {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+  }
+
   .aboutme .myinfo {
     /* border: 1px solid #0fa50fe6; */
     position: absolute;

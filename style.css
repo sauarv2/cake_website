@@ -10,6 +10,7 @@
   transition: all 0.4s linear;
   font-family: "Comfortaa", cursive;
   text-decoration: none;
+  list-style-type: none;
 }
 html {
   font-size: 90%;
@@ -137,6 +138,11 @@ ul {
   }
 }
 /** SERVICE ICON***/
+/* cake link */
+.cakeLink{
+  pointer-events: none;
+  cursor: pointer;
+}
 .dropdown #drop {
   line-height: 30rem;
   color: var(--black-color);
@@ -278,6 +284,10 @@ ul li a:hover {
   .navbar.slide {
     right: 0%;
   }
+  .cakeLink{
+  pointer-events: all;
+  /* cursor: pointer; */
+}
 }
 /* Responsive TABLE */
 
@@ -1386,7 +1396,7 @@ a {
   }
 }
 
-/* scroll bar******************* */
+/* scroll bar style    ******************* */
 ::-webkit-scrollbar {
   width: 1rem;
 }
@@ -1398,3 +1408,8 @@ a {
   border-radius: 10px;
   border: 0.5rem solid transparent;
 }
+
+/* cake responsive page ********************************/
+
+
+.
