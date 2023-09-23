@@ -121,7 +121,9 @@ body {
   }
   .aboutme img {
     position: absolute;
-    width: 45%;
+    width: 40%;
+    top: 1%;
+
     right: 1%;
   }
   .aboutme h1 {
