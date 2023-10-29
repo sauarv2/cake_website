@@ -38,9 +38,13 @@ body {
   --bg-color3: #faf9f9;
 }
 .logo {
-  /* border: 1px solid red; */
-  margin-bottom: 5rem;
   font-size: 2rem;
+  /* border: 1px solid red; */
+  /* width: 20px; */
+  margin-left: 5rem;
+}
+.logo img {
+  width: 10rem;
 }
 
 .contactUs {
@@ -117,6 +121,9 @@ body {
 }
 
 @media (width <= 420px) {
+  .logo {
+    margin-left: 0;
+  }
   .contactUs {
     flex-direction: column;
     margin-bottom: 5rem;

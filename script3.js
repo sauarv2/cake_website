@@ -8,59 +8,59 @@ const trandingcake_data = [
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-2.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-3.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-4.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-5.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-6.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-7.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-8.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-9.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-10.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-11.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-12.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-13.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-14.jpg",
   },
   {
     order: "Order Now",
-    image: "img/tranding-cake/pic-1.jpg",
+    image: "img/tranding-cake/pic-15.jpg",
   },
 ];
 

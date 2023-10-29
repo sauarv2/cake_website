@@ -18,12 +18,14 @@ html {
 img {
   width: 100%;
 }
-h1 {
-  /* border: 1px solid red; */
-  margin-bottom: 5rem;
+.logo {
   font-size: 2rem;
-
-  width: fit-content;
+  /* border: 1px solid red; */
+  /* width: 20px; */
+  margin-left: 5rem;
+}
+.logo img {
+  width: 10rem;
 }
 
 body {
@@ -47,6 +49,7 @@ body {
 .TrandingCakes h1 {
   font-size: 3rem;
   position: relative;
+  width: fit-content;
 }
 
 .TrandingCakes h1::after {
@@ -112,6 +115,9 @@ body {
   }
 }
 @media (width <= 420px) {
+  .logo {
+    margin-left: 0;
+  }
   .TrandingCakes .Tconatainer .imagep {
     width: 95%;
   }

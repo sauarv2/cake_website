@@ -62,6 +62,11 @@ ul {
   color: #050505;
   font-size: 2rem;
   /* border: 1px solid red; */
+  /* width: 20px; */
+  margin-left: 5rem;
+}
+.logo img{
+  width: 9.5rem;
 }
 .addresBar {
   width: 100%;
@@ -657,6 +662,10 @@ LANDING PAGE SLIDE--------------------------
 }
 
 @media (width < 420px) {
+  .logo {
+
+  margin-left: 0;
+  }
   .Slideproject .SlideprojectContainer .projects img {
     /* border-bottom-right-radius: 200px; */
   }

@@ -8,59 +8,59 @@ const designcake_data = [
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-2.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-3.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-4.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-5.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-6.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-7.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-8.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-9.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-10.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-11.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-12.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-13.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-14.jpg",
   },
   {
     order: "Order Now",
-    image: "img/design-cakes/pic-1.jpg",
+    image: "img/design-cakes/pic-15.jpg",
   },
 ];
 

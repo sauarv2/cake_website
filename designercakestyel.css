@@ -18,12 +18,15 @@ html {
 img {
   width: 100%;
 }
-h1 {
-  /* border: 1px solid red; */
-  margin-bottom: 5rem;
-  font-size: 2rem;
 
-  width: fit-content;
+.logo {
+  font-size: 2rem;
+  /* border: 1px solid red; */
+  /* width: 20px; */
+  margin-left: 5rem;
+}
+.logo img {
+  width: 10rem;
 }
 
 body {
@@ -47,6 +50,8 @@ body {
 .DesignCakes h1 {
   font-size: 3rem;
   position: relative;
+  /* border: 1px solid red; */
+  width: fit-content;
 }
 
 .DesignCakes h1::after {
@@ -112,6 +117,9 @@ body {
   }
 }
 @media (width <= 420px) {
+  .logo {
+    margin-left: 0;
+  }
   .DesignCakes .Dconatainer .imagep {
     width: 95%;
   }
